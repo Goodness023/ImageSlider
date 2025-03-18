@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+/* Slider container */
+.slider-effect {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Container holding images */
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Navigation buttons */
+.slider-effect i {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: 50%;
+  transform: translate(-50%);
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+.slider-effect i:hover {
+  opacity: 1;
+}
+
+/* Position previous button */
+.btn-previous {
+  left: 20px;
+}
+
+/* Position next button */
+.btn-next {
+  right: 3px;
+}
